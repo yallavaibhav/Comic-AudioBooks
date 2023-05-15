@@ -65,9 +65,10 @@ def speech(pred, file_number):
                       28.0: 'audios/Aunt_May.flac',
                       29.0: 'audios/J_John.mp3',
                       30.0: 'audios/Narration.flac',
-                      31.0: 'audios/Venom.wav',
+                      31.0: 'audios/Brock.flac',
                       32.0: 'audios/Women1.flac',
                       200.0: 'audios/Narration.flac'}
+    #''
     df = pred[0]
     print(df)
 
