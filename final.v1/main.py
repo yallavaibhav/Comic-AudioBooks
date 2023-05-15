@@ -53,11 +53,11 @@ def upload_predict():
                 #     rem_image.append(image_location)
                 #     print('rem_image is', rem_image)
 
-            elif os.path.splitext(image_file.filename)[-1] == '.jpg' or os.path.splitext(image_file.filename)[-1] == '.png':
+            elif os.path.splitext(image_file.filename)[-1] == '.jpg' or os.path.splitext(image_file.filename)[-1] == '.png' or os.path.splitext(image_file.filename)[-1] == '.jpeg':
                 image_location = os.path.join(UPLOAD_FOLDER, image_file.filename)
                 image_file.save(image_location)
             # pred = panels(image_location)
-            print("The image location", image_location)
+            #print("The image location", image_location)
             if os.path.splitext(image_file.filename)[-1] == '.zip':
                 extarcted_files = os.listdir(UPLOAD_FOLDER1)
                 print(extarcted_files)
